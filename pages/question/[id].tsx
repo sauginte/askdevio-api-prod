@@ -3,7 +3,6 @@ import QuestionView from "../../components/QuestionView/QuestionView";
 import { useEffect, useState } from "react";
 import { QuestionType } from "@/types/question";
 import { useRouter } from "next/router";
-import axios from "axios";
 import { AnswerType } from "@/types/answer";
 import Loading from "../../components/Loading/Loading";
 import { fetchQuestionWithAnswers } from "@/api/question";
