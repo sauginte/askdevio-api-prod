@@ -7,7 +7,7 @@ import axios from "axios";
 import { AnswerType } from "@/types/answer";
 import Loading from "../../components/Loading/Loading";
 
-const index = () => {
+const QuestionPage = () => {
   const router = useRouter();
   const [question, setQuestion] = useState<QuestionType | null>(null);
   const [answers, setAnswers] = useState<AnswerType[]>([]);
@@ -48,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default QuestionPage;
