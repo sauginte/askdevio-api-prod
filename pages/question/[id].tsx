@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import { AnswerType } from "@/types/answer";
 import Loading from "../../components/Loading/Loading";
+import { fetchQuestionWithAnswers } from "@/api/question";
 
 const QuestionPage = () => {
   const router = useRouter();
@@ -16,9 +17,7 @@ const QuestionPage = () => {
 
   const fetchQuestionWithAnswersById = async (id: string) => {
     try {
-      const response = await axios.get(
-        `http://localhost:3001/questions/${id}/answers`
-      );
+      const response = await fetchQuestionWithAnswers({ id: id });
 
       setQuestion(response.data.question);
       setAnswers(response.data.answer);
