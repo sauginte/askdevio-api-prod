@@ -1,22 +1,42 @@
-.insertWrapper {
-  width: 80%;
+.wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding-top: 5rem;
-  gap: 0.7rem;
 
   textarea {
-    height: 100px;
+    width: 600px;
+    height: 200px;
     font-family: inherit;
     padding: 1rem;
   }
 }
+.inputWrp {
+  padding-top: 2rem;
+}
 
 .button {
+  width: 600px;
   display: flex;
   justify-content: flex-end;
 
   button {
-    width: 20%;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+
+    textarea {
+      width: 500px;
+    }
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
   }
 }
