@@ -64,7 +64,7 @@ const InsertQuestion = () => {
   };
   return (
     <div className={styles.wrapper}>
-      <h3>Don't be shy... Ask a question!</h3>
+      <h3>{"Don't be shy... Ask a question!"}</h3>
       <div className={styles.inputWrp}>
         <textarea
           placeholder="your question..."
