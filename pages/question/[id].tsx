@@ -28,7 +28,9 @@ const QuestionPage = () => {
   };
 
   useEffect(() => {
-    id && fetchQuestionWithAnswersById(id);
+    if (id) {
+      fetchQuestionWithAnswersById(id);
+    }
   }, [id]);
 
   return (
