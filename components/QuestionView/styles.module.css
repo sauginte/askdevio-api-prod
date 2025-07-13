@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.question {
+  width: 70%;
+  text-align: center;
+}
+.answerWrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answer {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.likesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding-left: 1rem;
+}
+.answerText {
+  width: 80%;
+  padding-left: 2rem;
+  font-size: 0.8rem;
+}
+.button {
+  padding-right: 1rem;
+}
+.buttonWrapper {
+  width: 150px;
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+}

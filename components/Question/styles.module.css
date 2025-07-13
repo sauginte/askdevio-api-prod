@@ -1,0 +1,52 @@
+.wrapper {
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 1.2rem;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.wrapper:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 0.7rem;
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+}
+.contentWrp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question {
+  padding: 0 3rem;
+  width: 80%;
+}
+.readMoreWrp {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+
+  a {
+    text-decoration: none;
+    color: #ffc700;
+    font-size: 0.8rem;
+  }
+}
+.date {
+  width: 200px;
+  color: rgba(128, 128, 128, 0.532);
+}
