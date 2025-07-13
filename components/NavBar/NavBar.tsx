@@ -3,7 +3,6 @@ import Link from "next/link";
 import Logout from "../../assets/images/logout.svg";
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
-import BurgerMenu from "../../assets/images/burger-menu.svg";
 
 type NavBarProps = {
   jwtToken: string;
